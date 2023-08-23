@@ -2,13 +2,8 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+The porpuse of the analysis was to train a logistic regression model to see which of the users were a high risk o a save for example one of the variables that were on the dataframe was number of accounts in which just having a quick check one could see how it can correlate on the result and were a vast number of users that ware save than the ones that were a risk having a total of:  "0" = 75036 and  "1" = 2500. 
+First I had to split the data to train as testing datasets, the the creation of the model and then fit the model, predict, doing the confusion matrix and finally doing the classification report, which led to positive results.
 
 ## Results
 
@@ -16,16 +11,20 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * Machine Learning Model 1:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
-
+  Accuracy: 99%
+  Precision: for "0" was 100% and for "1" was 85%
+  Recall scores: for "0" was 99% and for "1" was 91%
 
 
 * Machine Learning Model 2:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
+  Accuracy: 99%
+  Precision: for "0" was 100% and for "1" was 84%
+  Recall scores: for "0" was 99% and for "1" was 99%
 
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-If you do not recommend any of the models, please justify your reasoning.
+I would use the Model 2 because even though it had a better precision result for the "1" in the first one, it is more reliable the second in overall performance
+
